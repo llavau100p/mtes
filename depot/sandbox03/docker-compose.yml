@@ -5,4 +5,4 @@ services:
     ports:
       - "${WELCOME_PORT}:80"
     environment:
-      - WELCOME_TITRE
+      - WELCOME_TITRE="${WELCOME_TITRE}"

@@ -45,14 +45,19 @@
     <?php
                                                     
      $to = "laurent.lavaud@developpement-durable.gouv.fr";     
+     $to2 = "laurent.lavaud@free.fr";
      $subject = "Test mail";
      $message = "Coucou de l interieur de l instance";
      $from = "laurent.lavaud@developpement-durable.gouv.fr";
      $headers = "From:" . $from;
 
      echo "Envoi d'un petit mail à " . $to;
-     
-     mail($to,$subject,$message,$headers)
+     mail($to,$subject,$message,$headers);
+
+     echo "<br>\n";
+		  
+     echo "Envoi d'un petit mail à " . $to2;
+     mail($to2,$subject,$message,$headers);
    ?>
 
   </body>

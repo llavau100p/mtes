@@ -49,10 +49,12 @@
      $to_all = "$to, $to_2",
      $subject = "Test mail";
      $message = "Coucou de l interieur de l instance";
-     $from = "laurent.lavaud@developpement-durable.gouv.fr";
+     $from = "robot-sandbox02.cseco@developpement-durable.gouv.fr";
      $headers = "From:" . $from;
 
-     echo "Envoi d'un petit mail à " . $to_all;
+     echo "Envoi d'un petit mail<br>\nFrom: " . $from . "<br>\n";
+     echo "To: " . $to_all . "<br>\n";
+
      mail($to_all,$subject,$message,$headers);
     ?>
 

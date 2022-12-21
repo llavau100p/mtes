@@ -46,7 +46,7 @@
                                                     
      $to = "laurent.lavaud@developpement-durable.gouv.fr";
      $to_2 = "laurent.lavaud@free.fr";
-     $to_all = "$to, $to_2",
+     $to_all = "$to, $to_2";
      $subject = "Test mail";
      $message = "Coucou de l interieur de l instance";
      $from = "robot-sandbox02.cseco@developpement-durable.gouv.fr";
